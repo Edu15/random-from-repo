@@ -9,7 +9,7 @@ class MembersService
 	def initialize
 		org = ENV['GITHUB_ORG']
 		team = ENV['GITHUB_MEMBER_TEAM']
-		@base_url = "https://api.github.com/organizations/#{org}/team/#{team}/members"
+		@base_url = "https://api.github.com/orgs/#{org}/teams/#{team}/members"
 	end
 
 	def headers
